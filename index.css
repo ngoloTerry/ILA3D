@@ -1,0 +1,38 @@
+body{
+    background-color: #DADFE7;
+}
+h1{
+    background-color: #BD5B00;
+}
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #46494C;
+  }
+  
+  li {
+    float: left;
+ 
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 16px;
+    text-decoration: none;
+
+    } 
+
+body > ul li a:link{
+    text-decoration: none;
+    color: white;
+
+}
+body > ul li a:hover{
+    text-decoration: underline;
+    overflow: visible;
+}
+
+.SearchBar{
+text-decoration:solid, underline;
+}
