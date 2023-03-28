@@ -1,0 +1,48 @@
+body, html {
+    background-color: #DCDCDD;
+    margin: 0%;
+}
+
+h1 {
+    background-color: #1985A1;
+    font-family: Audiowide;
+    color: #DADFE7;
+    margin: 0%;
+}
+
+#SiteDesc {
+    padding-left: 0.5%;
+}
+
+#CreatorsDesc {
+    padding-left: 0.5%;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #46494C;
+  }
+  
+  li {
+    float: left;
+ 
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 16px;
+    text-decoration: none;
+
+    } 
+
+body > ul li a:link{
+    text-decoration: none;
+    color: white;
+
+}
+body > ul li a:hover{
+    text-decoration: underline;
+    /* overflow: visible; (?) */
+}
