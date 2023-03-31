@@ -24,6 +24,9 @@ ul {
     overflow: hidden;
     background-color: #46494C;
   }
+li:hover{
+    background-color: #3a3c3d;
+}
   
   li {
     float: left;
@@ -33,18 +36,21 @@ ul {
     text-align: center;
     padding: 16px;
     text-decoration: none;
-    } 
+    }
 
-body > ul li a:link{
-    text-decoration: none;
-    color: white;
+    li a{
+        color: white;
+        text-align: center;
+        text-decoration: none;
+    }
 
-}
-body > ul li a:hover{
+body ul li a:hover{
     text-decoration: underline;
     /* overflow: visible; (?) */
 }
 
-.SearchBar{
-text-decoration:solid, underline;
+.search {
+    float: right;
+        height:15px;
+        margin: 2px;
 }
