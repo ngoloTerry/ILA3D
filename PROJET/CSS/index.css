@@ -54,3 +54,30 @@ body ul li a:hover{
         height:15px;
         margin: 2px;
 }
+footer{
+    color: #46494C
+
+/*Le contenu est modifié ici. J'ai réussi à le faire marcher quelque peu, mais le padding et margin coopèrent pas trop.*/ 
+}
+#content{
+    
+    position: absolute;
+    justify-content: center;
+    align-items: center;
+    margin-top: 2.5%;
+    width: 100%;
+    display: block;
+    grid-template-columns: repeat(auto-fill-minmax(200px,1fr));
+}
+
+#content img{
+    margin-left: 10%;
+    padding-left: 0%;
+    padding-right: 0%;
+    width: 15%;
+    height: 15%;
+    object-fit: cover;
+    object-position: center;
+
+
+}
