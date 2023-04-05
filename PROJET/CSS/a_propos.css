@@ -10,6 +10,9 @@ h1 {
     margin: 0%;
     padding-left: 0.25%;
 }
+h2,h3,h4{
+    font-family: monospace;
+}
 
 #banner{
     width: 100%;
@@ -66,4 +69,18 @@ body ul li a:hover{
 
 #CreatorsDesc {
     padding-left: 0.5%;
+}
+/*J'ai pas encore fait le mien, j'allais rater le téléphérique*/
+
+#Gabriel img{
+    padding-left: 10%;
+    height: 10%;
+    width: 20%;
+}
+#Gabriel h3{
+    padding-left:12%;
+}
+
+#Gabriel h4{
+    padding-left: 16%;
 }
