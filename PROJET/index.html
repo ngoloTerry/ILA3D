@@ -13,52 +13,68 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Space+Mono&display=swap" rel="stylesheet">
-    
-     <h1><a href="index.html" id="home" title="Retour à la page d'Accueil">ILA3D</a></h1>
-    
-    <div id="banner">
-    <img src="./Images/background-4168284_1280.jpg">
-    </div>
-
 </head>
-<!--La liste est simple, et est retravaillée dans le CSS pour  passer à l'horizontale, et afficher les couleurs.-->
 <body>
+    <header>
+        <h1><a href="index.html" class="header_home" title="Retour à la page d'Accueil">ILA3D</a></h1>
+        <img class="header_banner" src="./Images/background-4168284_1280.jpg" alt="banner"/>
+    </header>
+    
+    <!--La liste est simple, et est retravaillée dans le CSS pour  passer à l'horizontale, et afficher les couleurs.-->
+    <nav>
+        <div class="nav_list">
+            <div><a href="./Structure/À propos/a_propos.html">À propos</a></div>
+            <div><a href="./Structure/Nouveautés/nouveautes.html">Nouveautés</a></div>
+            <div><a href="./Structure/Nous contacter/contact.html">Nous contacter</a></div>
+        </div>
+        <div class="nav_search">
+            <form action="#">
+                <input 
+                    type="text"
+                    placeholder=" Rechercher"
+                    name="search">
+                <button>
+                    <i 
+                        class="fa fa-magnifying-glass"
+                        style="font-size: 18px;">
+                    </i>
+                </button>
+            </form>
+        </div>
+    </nav>
 
-
-    <div id = "navlist">
-        <ul>
-                <!-- 'ul>li+4' -->
-                <li><a href="../PROJET/Structure/À propos/a_propos.html">À propos</a></li>
-                <li><a href="../Nouveautés/nouveautes.html">Nouveautés</a></li>
-                <li><a href="../Nous contacter/contact.html">Nous contacter</a></li>
-                <div class="search">
-                        <form action="#">
-                            <input type="text"
-                                placeholder=" Rechercher"
-                                name="search">
-                            <button>
-                                <i class="fa fa-search"
-                                    style="font-size: 18px;">
-                                </i>
-                            </button>
-                        </form>
-                    </div>
+    <!-- Content -->
+    <main>
+        <div class="content">
+            <div class="article">
+                <div class="article_image"></div>
+                <div class="article_content">
+                    <h3>Le titre</h3>
+                    <p>Voici un joli poney</p>
                 </div>
-        </ul>
-    </div>
-    <div id="content">
-        <img src="./Images/index/Poney.gif">
-        <img src="./Images/index/Poney.gif">
-        <img src="./Images/index/Poney.gif">
-        <img src="./Images/index/Poney.gif">
-        <img src="./Images/index/Poney.gif">
-        <img src="./Images/index/Poney.gif">
-        <img src="./Images/index/Poney.gif">
-        <img src="./Images/index/Poney.gif">
-        <img src="./Images/index/Poney.gif">
-        <img src="./Images/index/Poney.gif">
-        <img src="./Images/index/Poney.gif">
-        <img src="./Images/index/Poney.gif">
-    </div>
+            </div>
+            <div class="article">
+                <div class="article_image"></div>
+                <div class="article_content">
+                    <h3>Le titre</h3>
+                    <p>Voici un joli poney</p>
+                </div>
+            </div>
+            <div class="article">
+                <div class="article_image"></div>
+                <div class="article_content">
+                    <h3>Le titre</h3>
+                    <p>Voici un joli poney</p>
+                </div>
+            </div>
+            <div class="article">
+                <div class="article_image"></div>
+                <div class="article_content">
+                    <h3>Le titre</h3>
+                    <p>Voici un joli poney</p>
+                </div>
+            </div>
+        </div>
+    </main>
 </body>
 </html>
