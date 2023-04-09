@@ -54,19 +54,30 @@ nav {
 /* A propos */
 .description {
     padding-left: 0.5%;
+    background-color: #46494C;
+    color: white;
 }
 
 /*J'ai pas encore fait le mien, j'allais rater le téléphérique*/
 /* Membre des personelles */
 .membre img{
-    padding-left: 10%;
+    margin-left: 10%;
+    margin-right: 10%;
+    padding: 10px;
+    padding-right: 60%;
     height: 10%;
     width: 20%;
+    background-image: linear-gradient(to right,  #46494C, #1985a1);
+
+}
+.membre{
+    margin-left: 0.5%;
+    
 }
 .membre h3{
-    padding-left:12%;
+    padding-left:12px;  
 }
 
 .membre h4{
-    padding-left: 16%;
+    padding-left: 15px;
 }
