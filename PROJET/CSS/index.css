@@ -93,6 +93,24 @@ main{
     background-size: cover;
     background-position: center;
 }
+/*footer*/
+footer{
+    font-family: monospace;
+    background-color: #46494C;
+    color:aliceblue;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 15%;
+}
+footer>a{
+    text-decoration: none;
+    color:aliceblue;  
+}
+footer>a:hover{
+    text-decoration: underline;
+    color:aliceblue;
+}
 
 /* Media */
 @media (max-width : 560px){
