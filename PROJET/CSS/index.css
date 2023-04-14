@@ -85,6 +85,11 @@ main{
     display: flex;
     justify-content: center;
 }
+
+main, a{
+    text-decoration: none;
+    color: black;
+}
 /* Content */
 .content{
     margin-top: 20px;
@@ -116,13 +121,13 @@ main{
 .article_image{
     width: 230px;
     height: 150px;
-    background: url('../Images/index/Poney.png');
+    background: url('../Images/creations/Thumbnail/Poney.png');
     background-size: cover;
     background-position: center;
     border: 2px solid #BD5B00;
 }
 .article_image:hover{
-    background: url('../Images/index/Poney.gif');
+    background: url('../Images/creations/gifs/Poney.gif');
     background-size: cover;
     background-position: center;
 }
