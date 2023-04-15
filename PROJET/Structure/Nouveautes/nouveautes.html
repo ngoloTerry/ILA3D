@@ -1,27 +1,32 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <meta charset="UTF-8">
-    <meta content='width=device-width, initial-scale=1'>
-    <link rel="stylesheet" href="../../CSS/nouveautes.css">
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>ILA3D | Nouveautés</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='../../CSS/nouveautes.css'>
     <script src='main.js'></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Audiowide&display=swap" rel="stylesheet">
-    <title>Ila3D | Du nouveau au quotidien</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Mono&display=swap" rel="stylesheet">
 </head>
 
+<header>
+    <h1><a href="index.html" class="header_home" title="Retour à la page d'Accueil">ILA3D | Nouveautés</a></h1>
+    <img class="header_banner" src="../../Images/background-4168284_1280.jpg" alt="banner"/>
+</header>
+
 <body>
-    <header>
-        <h1><a href="../../index.html" class="header_home" title="Retour à la page d'Accueil">ILA3D</a></h1>
-        <img class="header_banner" src="../../Images/background-4168284_1280.jpg" alt="banner"/>
-    </header>
     
     <!--La liste est simple, et est retravaillée dans le CSS pour  passer à l'horizontale, et afficher les couleurs.-->
     <nav>
         <div class="nav_list">
-            <div><a href="../../index.html">Page Principale</a></div>
-            <div><a href="../Nouveautés/nouveautes.html">À propos</a></div>
+            <div><a href="../A_propos/a_propos.html">À propos</a></div>
+            <div><a href="../../index.html">Page d'Acceuil</a></div>
             <div><a href="../Nous contacter/contact.html">Nous contacter</a></div>
         </div>
         <div class="nav_search">
@@ -31,13 +36,74 @@
                     placeholder=" Rechercher"
                     name="search">
                 <button>
-                    <i 
+                    <i
                         class="fa fa-magnifying-glass"
                         style="font-size: 18px;">
+                        &#x2713
                     </i>
                 </button>
             </form>
         </div>
     </nav>
+
+    <!-- Content -->
+    <main>
+        <a href="Structure/CreationTemplate/Creation.html">
+            <div class="content">
+                <div id="article1">
+                <div id="article_image1"></div>
+                <div class="article_content">
+                    <h3 id="article_titre1">"Naruto"</h3>
+                    <p id="article_desc1">Et oui, vous le reconnaisez certainement ; 
+                        <br> Il s'agit de "Naruto" !
+                    </p>
+                </div>
+            </div>
+        </a>
+            
+        <a href="Structure/CreationTemplate/Creation.html">
+            <div id="article2">
+                <div id="article_image2"></div>
+                <div class="article_content">
+                    <h3 id="article_titre2">RobotBoy</h3>
+                    <p id="article_desc2">C'est un fier robot que voici ;
+                        <br> J'ai nommé : Robot Boy !
+                    </p>
+                </div>
+            </div>
+        </a>
+        
+        <a href="Structure/CreationTemplate/Creation.html">
+            <div id="article3">
+                <div id="article_image3"></div>
+                <div class="article_content">
+                    <h3 id="article_titre3">Squeeck</h3>
+                    <p id="article_desc3">Vous connaissez Squeeck? Moi non plus.</p>
+                </div>
+            </div>
+        </a>
+
+        <a href="Structure/CreationTemplate/Creation.html">
+            <div id="article4">
+                <div id="article_image4"></div>
+                <div class="article_content">
+                    <h3 id="article_titre4">Super Poney</h3>
+                    <p id="article_desc4">Voici un joli petit poney.
+                        <br> Oui, il est là lui aussi.
+                    </p>
+                </div>
+            </div>
+        </a>
+        </div>
+    </main>
 </body>
+
+<footer>
+
+    <a href="../A_propos/a_propos.html">À propos</a>
+    <a href="../../index.html">Page d'Acceuil</a>
+    <a href="../Nous contacter/contact.html">Nous contacter</a>
+
+</footer>
+
 </html>

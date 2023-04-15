@@ -1,29 +1,31 @@
 <!DOCTYPE html>
 <html>
 <head>
-        <meta charset="UTF-8">
-        <meta content='width=device-width, initial-scale=1'>
-        <link rel="stylesheet" href="../../CSS/a_propos.css">
-        <script src='main.js'></script>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>ILA3D | Site & Créateurs</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='../../CSS/a_propos.css'>
+    <script src='main.js'></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Audiowide&display=swap" rel="stylesheet">
-
-
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Mono&display=swap" rel="stylesheet">
 </head>
 
-<title>Ila3D | Site & Créateurs</title>
+<header>
+    <h1><a href="../../index.html" class="header_home" title="Retour à la page d'Accueil">ILA3D | Site & Créateurs</a></h1>
+    <img class="header_banner" src="../../Images/background-4168284_1280.jpg" alt="banner"/>
+</header>
 
 <body>
-    <header>
-        <h1><a href="../../index.html" class="header_home" title="Retour à la page d'Accueil">ILA3D</a></h1>
-        <img class="header_banner" src="../../Images/background-4168284_1280.jpg" alt="banner"/>
-    </header>
     
     <!--La liste est simple, et est retravaillée dans le CSS pour  passer à l'horizontale, et afficher les couleurs.-->
     <nav>
         <div class="nav_list">
-            <div><a href="../../index.html">Acceuil</a></div>
+            <div><a href="../../index.html">Page d'Accueil</a></div>
             <div><a href="../Nouveautes/nouveautes.html">Nouveautés</a></div>
             <div><a href="../Nous contacter/contact.html">Nous contacter</a></div>
         </div>
@@ -44,60 +46,74 @@
         </div>
     </nav>
 
-    <div class="description">
-        <div id="description_website">
-            <!--+ id-->
-            <br />
-            <h2>À propos du site :</h2>
-            <h3>Le site Web a été fondé à l'occasion de la mise en place d'un projet HTML évalué en Licence 1 d'Informatique à l'Université de la Réunion.
-            <br />Le but de celui-ci est simplement de présenter une structure correcte pour un site internet "classique" avec pour modèle un "site vitrine" plutôt orienté vers la modélisation 3D.
-            <br />Nous avons donc décidé de créer un "Template" (ou modèle) de notre conception qu'on pense convenable à de potentiels futurs projets, ou pour simplement donner une idée de ce que l'on peut faire en HTML et en CSS avec notre niveau actuel.
-            <br />Ce site permet de consulter un catalogue de modèles 3D (Libres de droits et/ou fait par les créateurs mis en avant sur le site) et de potentiellement les télécharger prochainement (après avoir pratiqué d'avantage le HTML et CSS/JavaScript et certainement aussi du PHP).
+  
+        <div id="Description">
+        <h2>À propos du site :</h2>
+        <h3> Ce site a été créé par deux étudiants dans le cadre d'un exercice de code en HTML et en CSS.
+            <br> Il a pour but de montrer ce que ces étudiants sont capables de faire avec leur niveau actuel en code.
+            <br>
+            <br> Ce site est donc un "Template", disons, un exemple d'un genre de sites qui seraient trouvables sur internet.
+            <br> La barre de recherche par exemple, n'est qu'une simple barre dans laquelle on peut écrire;
+            <br> On ne peut pas encore effectuer de réelles recherches, mais au moins elle existe. 
+            <br>
+            <br> De même, les articles présentés sur les autres pages sont en réalité des Gifs.
+            <br> Il n'y a pour le moment pas de réels models 3D à disposition en téléchargement, 
+            <br> mais c'est ce que le site devrait proposer à la fin de son développement.
+            <br>
+            <br> En principe, toutes les sources utilisées sont Libre de Droits.
+        </h3>
+        </div>
+    
+        <div id="Createurs">
+            <h2>À propos des créateurs du site :</h2>
+            <h3>Les créateurs du site sont deux étudiants en Licence 1 d'Informatique à l'Université de la Réunion.
             </h3>
-        </div>
-        <div id="description_creators">
-            <h2>À propos des créateurs :</h2>
-            <h3>Le site a été fondé par deux étudiants en première année de licence d'Informatique.
-            <br />Voici un court descriptif de qui sont ces étudiants :
-            <br />
-            <br />[PLACEHOLDER] (Noms, Prénoms, Photos, Parcours, "Profession", Projets, Lieux, etc...) 
-            <!--Placer les photos en CSS + Description : Qui, Où, Quoi, Pourquoi, Comment, Projets futurs(?)-->
-            </h3>
-        </div>
-    </div>
 
-    <div class="membre">
-        <div id="membre_img1"></div>
-        <div class="membre_desc">
-            <h3>Gabriel THEROUDE:</h3>
-            <h4>[Étudiant] 
-                <br> Je suis étudiant à l'Université de la Réunion ! 
-                <br> Je suis en Licence 1 INFORMATIQUE.
-                <br> [Etc...]
-            <!--<br>                                                                                                  Limit     |-->
-            </h4>
+            <div id="membre1">
+                <div id="membre_img1">
+                    <img src="../../Images/À propos/Gabriel.png"/>
+                </div>
+                <div class="membre_desc">
+                    <h3>Gabriel THEROUDE:</h3>
+                    <h4>Bonjour ! 
+                        <br>
+                        <br> Je  m'apelle Gabriel. 
+                        <br> J'étudie à l'Université de la Réunion.
+                        <br> Je suis actuellement en Licence 1 INFORMATIQUE.
+                        <br>
+                        <br> Je suis intéressé par tout ce qui touche à l'informatique, alors j'ai décidé d'en apprendre plus !
+                        <br>
+                        <br> Pour ce faire, 
+                        <br> moi et mon ami Tahiry nous sommes lancés dans ce projet. 
+                        <br>
+                        <br> J'espère que vous apprécierez notre site ! 
+                        <br> On a fait de notre mieux pour qu'il fonctionne correctement.
+                    <!--<br>                                                                                                  Limit     |-->
+                    </h4>
+                </div>
+            </div>
+
+            <div id="membre2">
+                <div id="membre_img2">
+                    <img src="../../Images/À propos/Tahiry.png"/>
+                </div>
+                <div class="membre_desc">
+                    <h3>Tahiry NOURDINE:</h3>
+                    <h4>[Étudiant] 
+                        <br> Je suis étudiant à l'Université de la Réunion ! 
+                        <br> Je suis en Licence 1 INFORMATIQUE.
+                        <br> [Etc...]
+                    <!--<br>                                                                                                  Limit     |-->
+                    </h4>
+                </div>
+            </div>
         </div>
-    </div>
-
-    <div class="membre">
-        <div id="membre_img2"></div>
-
-        <div class="membre_desc">
-            <h3>Tahiry NOURDINE:</h3>
-            <h4>[Étudiant] 
-                <br> Je suis étudiant à l'Université de la Réunion ! 
-                <br> Je suis en Licence 1 INFORMATIQUE.
-                <br> [Etc...]
-            <!--<br>                                                                                                  Limit     |-->
-            </h4>
-        </div>
-    </div>
-
 </body>
+
 <footer>
 
-    <a href="../../index.html">Acceuil</a>
-    <a href="../Nouveautes/nouveautes.html">Nouveautés</a>
+    <a href="../../index.html">Page d'Accueil</a>
+    <a href="../Nouveautés/nouveautes.html">Nouveautés</a>
     <a href="../Nous contacter/contact.html">Nous contacter</a>
 
 </footer>

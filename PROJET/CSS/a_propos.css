@@ -1,7 +1,8 @@
-body, html {
-    background-color: #DCDCDD;
-    margin: 0%;
-    font-family: monospace;
+body, html{
+    background-color: #DADFE7;
+    width: 100%;
+    margin: 0;
+    background-image: linear-gradient(#46494C, #1985a1, #1985a1, #46494C);
 }
 
 /* Header */
@@ -11,7 +12,7 @@ header{
     background-color: #1985a1;
 }
 header>h1{
-    margin: 0px;
+    margin: 3px;
     font-family: Audiowide;
     width: 100%;
 }
@@ -47,7 +48,7 @@ nav {
     font-family: monospace;
     padding-left: 20px;
     padding-right: 20px;
-    padding-top: 22px;
+    padding-top: 20px;
     padding-bottom: 22px;
 
 }
@@ -79,47 +80,59 @@ nav {
     background: #aeb5c0;
 }
 
-/* A propos */
-.description {
-    padding-left: 0.5%;
-    background-color: #46494C;
-    color: white;
+#Description{
+    margin-bottom: 3px;
+    margin-left: 4px;
 }
 
-/*J'ai pas encore fait le mien, j'allais rater le téléphérique*/
-/* Membre du personnel */
-.membre{
-    margin-left: 0.5%;
-    margin-bottom: 1%;
+#Description h3{
+    margin-left: 6px
+}
+
+#Createurs{
+    border-bottom: 2px solid #37393b;
+    border-top: 2px solid #37393b;
+    margin-bottom: 3px;
+    width:100%;
+}
+
+#Createurs h3{
+    margin-left: 6px;
+}
+
+#membre1{
+
+    display: flex;
+    flex-direction: row-reverse;
+    border: 2px solid #37393b;
+    border-bottom: 4px solid #37393b;
+    border-right: none;  
+}
+
+#membre2{
     display: flex;
     flex-direction: row;
-    gap: 15px;
-    border: 4px solid #1985a1;
-    width: 90%;
-    background-image: linear-gradient(#46494C, #1985a1);
-     
+    border: 2px solid #37393b;
+    border-top: 4px solid #37393b;
+    border-left: none;
 }
 
-#membre_img1{
+#membre_img1 img{
     width: 300px;
     height: 400px;
-    background: url('../Images/a_propos/Gabriel.png');
-    background-size: cover;
-    background-position: center;
-    border-radius: 0px 50px 30px 5px;
+    border: 4px solid #37393b;
+    border-radius: 30px 0px 0px 30px;
 }
 
-#membre_img2{
+#membre_img2 img{
     width: 300px;
     height: 400px;
-    background: url('../Images/a_propos/Tahiry.png');
-    background-size: cover;
-    background-position: center;
-    border-radius: 0px 50px 30px 5px;
+    border: 4px solid #37393b;
+    border-radius: 0px 30px 30px 5px;
 }
 
 .membre_desc{
-    width: 800px;
+    width: 100%;
     height: 400px;
     position: relative;
     text-align: left;
@@ -137,7 +150,6 @@ nav {
     padding-left: 15px;
 }
 
-/*Footer*/
 footer{
     font-family: monospace;
     background-color: #46494C;
@@ -145,6 +157,7 @@ footer{
     display: flex;
     flex-direction: row;
     justify-content: center;
+    margin-top: 3px;
     gap: 15%;
 }
 footer>a{
@@ -157,7 +170,25 @@ footer>a:hover{
 }
 
 /* Media */
-@media (max-width : 570px){
+
+@media (max-width : 620px){
+    .nav_list{
+        font-size: 11px;
+    }
+    footer{
+        font-size: 11px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 4px;
+    }
+
+    header h1 a{
+        font-size: 22px
+    }
+}
+
+@media (max-width : 571px){
     header {
         height: 80px
     }
@@ -165,6 +196,7 @@ footer>a:hover{
         height: 40px;
     }
     
+    /*Nav*/
     nav{
         flex-direction: column;
         align-items: center;
@@ -177,36 +209,134 @@ footer>a:hover{
 
     .nav_list>div>a{
         justify-items: center;
-        border-color: #BD5B00;
-        padding-top: 10px;
+        border-color: #1985a1;
+        padding-top: 5px;
         padding-bottom: 10px;
     }
 
-    #membre_img1{
-        width: 300px;
-        height: 400px;
-        background: url('../Images/a_propos/Gabriel.png');
-        background-size: cover;
-        background-position: center;
-        border-radius: 0px 50px 30px 5px;
-    }
-    
-    #membre_img2{
-        width: 300px;
-        height: 400px;
-        background: url('../Images/a_propos/Tahiry.png');
-        background-size: cover;
-        background-position: center;
-        border-radius: 0px 50px 30px 5px;
-        
+    #Createurs{
+        max-width: 570px;
     }
 
-    @media (max-width: 1000px){
-        
-        .membre{
-            width: 908px;
-            height: 408px;
-            
-        }
+    .membre_desc h3{
+        padding: 0;
+        font-size: 16px;
+    }
+
+    .membre_desc h4{
+        padding-left: 7px;
+        font-size: 14px;
+    }
+}
+
+@media (max-width : 426px){
+    h1{
+        font-size: 30px;
+    }
+
+    .header_banner{
+        height: 42px;
+    }
+
+    #membre1{
+        display: flex;
+        flex-direction: column;
+        border-left: 0;
+        border-right: 0;
+    }
+
+    #membre_img1 img{
+        object-position: center;
+        object-fit: cover;
+        width: 300px;
+        height: 400px;
+        border: 2px solid #37393b;
+        border-radius: 0 0 20px 20px;
+        margin-left: 15%;
+        padding: 0;
+    }
+
+    #membre2{
+        display: flex;
+        flex-direction: column;
+        border-left: 0;
+        border-right: 0;
+    }
+
+    #membre_img2 img{
+        object-position: center;
+        object-fit: cover;
+        width: 300px;
+        height: 400px;
+        border: 2px solid #37393b;
+        border-radius: 0 0 20px 20px;
+        margin-left: 15%;
+        padding: 0;
+    }
+
+    .membre_desc{
+        height: fit-content;
+        width: 318px;    
+    }
+
+    #Createurs h2{
+        font-size: 22px;
+        margin-left: 2px;
+    }
+
+    #Createurs h3{
+        font-size: 16px;
+        margin-left: 4px;
+    }
+
+    .membre_desc h3{
+        padding: 0;
+        font-size: 16px;
+    }
+
+    .membre_desc h4{
+        padding-left: 7px;
+        font-size: 12px;
+    }
+}
+
+@media (max-width: 376px){
+    
+    #membre_img1 img{
+        margin-left: 10%;
+    }
+
+    #membre_img2 img{
+        margin-left: 10%;
+    }
+}
+
+@media (max-width: 321px){
+
+    #membre1{
+        width: 100%;
+    }
+
+    #membre2{
+        width: 100%;
+    }
+
+
+    #membre_img1 img{
+        margin-left: 3%
+    }
+
+    #membre_img2 img{
+        margin-left: 3%
+    }
+
+    h2{
+        font-size: 20px;
+        margin-left: 2px;
+    }
+
+    h3{
+        font-size: 14px;
+        margin-left: 4px;
     }
 }
