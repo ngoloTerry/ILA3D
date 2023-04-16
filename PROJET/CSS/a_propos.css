@@ -83,6 +83,7 @@ nav {
 #Description{
     margin-bottom: 3px;
     margin-left: 4px;
+    font-family: monospace;
 }
 
 #Description h3{
@@ -94,6 +95,7 @@ nav {
     border-top: 2px solid #37393b;
     margin-bottom: 3px;
     width:100%;
+    font-family: monospace;
 }
 
 #Createurs h3{
