@@ -85,42 +85,37 @@ main{
     display: flex;
     justify-content: center;
 }
-/* Content */
-.content{
-    margin-top: 20px;
-    width:90%;
-    max-width: 1000px;
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-}
-.article{
-    display:flex;
-    flex-direction: row;
-    gap: 10px;
-}
-.article_content{
-    width: 100%;
-}
-.article_content>h3{
-    text-align: center;
-}
-.article_content>p{
-    width:100%;
-}
-.article_image{
-    width: 230px;
-    height: 150px;
-    background: url('../Images/index/Poney.png');
-    background-size: cover;
-    background-position: center;
-}
-.article_image:hover{
-    background: url('../Images/index/Poney.gif');
-    background-size: cover;
-    background-position: center;
-}
 
+
+/*Formulaire*/
+
+#form{
+    margin-bottom: 5%;
+    margin-left:25%;
+    margin-right: 25%;    
+
+}
+#form>h1{
+ background-color: #BD5B00;
+ margin-bottom: 0%;
+ font-family:audiowide;
+ text-align: center;
+ color: aliceblue;
+ border-style: outset;
+}
+#form_centre{
+    
+    border-style: outset;
+    border-width: 5px;
+    padding: 5%;
+}
+#form_centre,p{
+    text-decoration: underline;
+    font-family: monospace;
+}
+#message{
+    overflow: hidden;
+}
 
 /*footer*/
 footer{
@@ -176,6 +171,14 @@ footer>a:hover{
         flex-direction: column;
         align-items: center;
     }
+
+    #form{
+        margin-bottom: 5%;
+        margin-left:15%;
+        margin-right: 15%;    
+    
+    }
+    
 
     /*footer*/
         footer{
