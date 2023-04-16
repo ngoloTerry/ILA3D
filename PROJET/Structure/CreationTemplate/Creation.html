@@ -14,16 +14,19 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Space+Mono&display=swap" rel="stylesheet">
 </head>
+
+<header>
+    <h1><a href="index.html" class="header_home" title="Retour à la page d'Accueil">ILA3D | Créations</a></h1>
+    <img class="header_banner" src="../../Images/background-4168284_1280.jpg" alt="banner"/>
+</header>
+
 <body>
-    <header>
-        <h1><a href="../../index.html" class="header_home" title="Retour à la page d'Accueil">ILA3D | CRÉATION</a></h1>
-    </header>
     
     <!--La liste est simple, et est retravaillée dans le CSS pour  passer à l'horizontale, et afficher les couleurs.-->
     <nav>
         <div class="nav_list">
             <div><a href="../A_propos/a_propos.html">À propos</a></div>
-            <div><a href="../Nouveautes/nouveautes.html">Nouveautés</a></div>
+            <div><a href="../../index.html">Page d'Accueil</a></div>
             <div><a href="../Nous contacter/contact.html">Nous contacter</a></div>
         </div>
         <div class="nav_search">
@@ -43,9 +46,6 @@
         </div>
     </nav>
 
-
-    
-
     <!-- Image du produit -->
 
     <div id="frame">
@@ -60,23 +60,55 @@
             <img src="../../Images/creations/gifs/Poney.gif">
         </div>
     </div>
-    <div id="autres">
-        <div id="plus">
-            <h3>Plus de créations:</h3>
-                <div id="recomandation"> <div>
+
+<div id="Plus"> <h2>Plus de contenu :</h2>
+    <!-- Content -->
+    <main>
+        <a href="Structure/CreationTemplate/Creation.html">
+            <div class="content">
+                <div id="article1">
+                <div id="article_image1"></div>
+                <div class="article_content">
+                    <h3 id="article_titre1">"Naruto"</h3>
+                    <p id="article_desc1">Et oui, vous le reconnaisez certainement ; 
+                        <br> Il s'agit de "Naruto" !
+                    </p>
                 </div>
-                    <div class="recomande"><img src="../../Images/creations/Thumbnail/naruto.png" title="Naruto"></div>
-                    <div class="recomande"><img src="../../Images/creations/Thumbnail/robotboy.png" title="RobotBoy"></div>
-                    <div class="recomande"><img src="../../Images/creations/Thumbnail/squeeck.png" title="Squeeck"></div>
+            </div>
+        </a>
+            
+        <a href="Structure/CreationTemplate/Creation.html">
+            <div id="article2">
+                <div id="article_image2"></div>
+                <div class="article_content">
+                    <h3 id="article_titre2">RobotBoy</h3>
+                    <p id="article_desc2">C'est un fier robot que voici ;
+                        <br> J'ai nommé : Robot Boy !
+                    </p>
                 </div>
+            </div>
+        </a>
+        
+        <a href="Structure/CreationTemplate/Creation.html">
+            <div id="article3">
+                <div id="article_image3"></div>
+                <div class="article_content">
+                    <h3 id="article_titre3">Squeeck</h3>
+                    <p id="article_desc3">Vous connaissez Squeeck? Moi non plus.</p>
+                </div>
+            </div>
+        </a>
         </div>
-    </div>
+    </main>
+</div>
 </body>
+
 <footer>
 
     <a href="../A_propos/a_propos.html">À propos</a>
-    <a href="../Nouveautes/nouveautes.html">Nouveautés</a>
+    <a href="../../index.html">Page d'Accueil</a>
     <a href="../Nous contacter/contact.html">Nous contacter</a>
 
 </footer>
+
 </html>
