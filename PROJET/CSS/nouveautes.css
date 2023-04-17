@@ -25,59 +25,105 @@ header>h1>a{
 }
 
 /* Navigation */
-nav {
-    display:flex;
+
+/* Style pour le menu */
+.menu {
+    display: flex;
     justify-content: space-between;
     align-items: center;
-    background: #46494C;
-    width: 100%;
-    padding-top:10px;
-    padding-bottom: 10px;
-}
-.nav_list{
-    display:grid;
-    place-items: center;
-    grid-template-columns: repeat(3, auto);
-    grid-auto-flow: row;
-    gap: 10px;
-}
-.nav_list>div>a{
-    color: white;
+    background-color:#46494C;
+    padding: 10px;
+  }
+  
+  /* Style pour les liens du menu */
+  .menu a {
+    color:#37393B;
     text-decoration: none;
+    margin-right: 10px;
+  }
+  
+  /* Style pour le menu déroulant */
+  .dropdown {
+    position: relative;
+    display: inline-block;
+  }
+  
+  /* Style pour le bouton du menu déroulant */
+  .dropdown .dropbtn {
+    background-color: #f8f8f8;
+    color: #333;
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+    font-family: audiowide;
+  }
+  
+  /* Style pour le contenu du menu déroulant */
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #37393B;
+    min-width: 160px;
+    z-index: 1;
+  }
+  
+  /* Style pour les liens du contenu du menu déroulant */
+  .dropdown-content a {
+    color: aliceblue;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
     font-family: monospace;
-    padding-left: 20px;
-    padding-right: 20px;
-    padding-top: 22px;
-    padding-bottom: 22px;
-
-}
-.nav_list>div>a:hover{
-    text-decoration: underline;
-    background: #37393b;
-}
-
-.nav_search input{
-    border-radius: 25%;
-    border: 3px solid #6f0582;
-    padding-left: 3px;
-    padding-right: 3px;
-    height: 30px;
-    width: 70%;
-}
-
-.nav_search button{
-    border-radius: 100%;
-    height: 40px;
-    border: 3px solid #6f0582;
-}
-
-.nav_search input:hover{
-    background: #aeb5c0;
-}
-
-.nav_search button:hover{
-    background: #aeb5c0;
-}
+  }
+  
+  /* Style pour les liens du contenu du menu déroulant au survol */
+  .dropdown-content a:hover {
+    background-color: #ddd;
+  }
+  
+  /* Affichage du contenu du menu déroulant au survol du bouton */
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+  /* Style pour la barre de recherche */
+.search-container {
+    display: flex;
+    align-items: center;
+  }
+  
+  .search-container input[type="text"] {
+    padding: 10px;
+    margin-right: 10px;
+    border: none;
+  }
+  
+  .search-container button[type="submit"] {
+    padding: 10px;
+    background-color: #f8f8f8;
+    border: none;
+    cursor: pointer;
+  }
+  
+/* Style pour la barre de recherche à droite */
+.search-container {
+    display: flex;
+    align-items: center;
+    margin-left: auto;
+  }
+  
+  .search-container input[type="text"] {
+    padding: 10px;
+    margin-right: 10px;
+    border: none;
+    font-family: audiowide;
+  }
+  
+  .search-container button[type="submit"] {
+    padding: 10px;
+    background-color: #f8f8f8;
+    border: none;
+    cursor: pointer;
+  }
 
 /* Main */
 main{
@@ -409,5 +455,13 @@ footer>a:hover{
 
     .nav_list{
         margin-top: 2px;
+    }
+}
+/*navobile*/
+@media (max-width: 321px){
+    .search-container{
+        display: flex;
+        flex-direction: column;
+        margin-left: 5px;
     }
 }

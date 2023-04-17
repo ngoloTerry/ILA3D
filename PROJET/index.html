@@ -23,28 +23,22 @@
 <body>
     
     <!--La liste est simple, et est retravaillée dans le CSS pour  passer à l'horizontale, et afficher les couleurs.-->
-    <nav>
-        <div class="nav_list">
-            <div><a href="Structure/A_propos/a_propos.html">À propos</a></div>
-            <div><a href="Structure/Nouveautes/nouveautes.html">Nouveautés</a></div>
-            <div><a href="Structure/Nous contacter/contact.html">Nous contacter</a></div>
+    
+    <div class="menu">
+        <div class="dropdown">
+          <button class="dropbtn">Menu &#9660;</button>
+          <div class="dropdown-content">
+            <a href="Structure/A_propos/a_propos.html">À propos</a>
+            <a href="Structure/Nouveautes/nouveautes.html">Nouveautés</a>
+            <a href="Structure/Nous contacter/contact.html">Nous contacter</a>
+          </div>
         </div>
-        <div class="nav_search">
-            <form action="#">
-                <input 
-                    type="text"
-                    placeholder=" Rechercher"
-                    name="search">
-                <button>
-                    <i
-                        class="fa fa-magnifying-glass"
-                        style="font-size: 18px;">
-                        &#x2713
-                    </i>
-                </button>
-            </form>
+        <div class="search-container">
+          <input type="text" placeholder="Rechercher...">
+          <button type="submit">&#x2713</button>
         </div>
-    </nav>
+      </div>
+
 
     <!-- Content -->
     <main>
