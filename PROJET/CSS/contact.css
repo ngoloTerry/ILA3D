@@ -116,7 +116,15 @@ main{
 #message{
     overflow: hidden;
 }
+#envoyer>button{
+    background-color:#BD5B00;
+}
 
+#envoyer>button>p{
+    color:aliceblue;
+    text-decoration: none;
+    font-family: audiowide;
+}
 /*footer*/
 footer{
     font-family: monospace;
